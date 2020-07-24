@@ -1,0 +1,36 @@
+{
+  "name": "@kuma/eslint-config",
+  "version": "1.0.0",
+  "description": "My ESLint configuration",
+  "author": "km-tr <kumagai@bear.tokyo>",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "eslint": "^7.5.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/km-tr/eslint-conifg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/km-tr/eslint-conifg/issues"
+  },
+  "homepage": "https://github.com/km-tr/eslint-conifg#readme",
+  "license": "MIT"
+}
