@@ -21,6 +21,7 @@ module.exports = {
   },
   plugins: ['simple-import-sort'],
   rules: {
+    'react/prop-types': 'off',
     'simple-import-sort/sort': 'error',
     'prettier/prettier': [
       'error',
