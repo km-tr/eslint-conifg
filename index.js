@@ -21,6 +21,24 @@ module.exports = {
   },
   plugins: ['simple-import-sort'],
   rules: {
+    'react/prop-types': 'off',
     'simple-import-sort/sort': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        semi: false,
+        singleQuote: true,
+      },
+    ],
   },
-};
+  overrides: [
+    {
+      files: '*.js',
+      rules: {
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
+}
