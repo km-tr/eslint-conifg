@@ -1,6 +1,6 @@
 {
   "name": "@kuma/eslint-config",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "My ESLint configuration",
   "author": "km-tr <kumagai@bear.tokyo>",
   "main": "index.js",
