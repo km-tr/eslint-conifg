@@ -4,21 +4,11 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
     'prettier/react',
   ],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    project: './tsconfig.json',
-    sourceType: 'module',
-  },
   plugins: ['simple-import-sort'],
   rules: {
     'react/prop-types': 'off',
@@ -33,11 +23,18 @@ module.exports = {
   },
   overrides: [
     {
-      files: '*.js',
-      rules: {
-        '@typescript-eslint/no-unsafe-assignment': 'off',
-        '@typescript-eslint/no-unsafe-member-access': 'off',
-        '@typescript-eslint/no-var-requires': 'off',
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'prettier/@typescript-eslint',
+      ],
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        project: './tsconfig.json',
+        sourceType: 'module',
       },
     },
   ],
