@@ -6,13 +6,14 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
     'prettier/react',
   ],
-  plugins: ['simple-import-sort'],
+  plugins: ['simple-import-sort', 'react-hooks'],
   rules: {
     'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'simple-import-sort/sort': 'error',
     'prettier/prettier': [
       'error',
