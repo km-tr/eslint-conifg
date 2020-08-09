@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     node: true,
   },
+  parser: '@typescript-eslint/parser',
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
@@ -34,7 +35,6 @@ module.exports = {
           jsx: true,
         },
         project: './tsconfig.json',
-        sourceType: 'module',
       },
     },
   ],
