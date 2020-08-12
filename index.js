@@ -4,11 +4,10 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/base',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'prettier/react',
-    'prettier/@typescript-eslint',
   ],
   plugins: ['simple-import-sort', 'react-hooks'],
   rules: {
@@ -28,7 +27,9 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       extends: [
+        'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'prettier/@typescript-eslint',
       ],
       parserOptions: {
         ecmaFeatures: {
