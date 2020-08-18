@@ -30,7 +30,8 @@
     "node": "v10.18.0 || ^12.14.0 || ^14.7.0"
   },
   "files": [
-    "index.js"
+    "index.js",
+    ".prettierrc"
   ],
   "repository": {
     "type": "git",
