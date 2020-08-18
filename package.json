@@ -31,7 +31,7 @@
   },
   "files": [
     "index.js",
-    ".prettierrc"
+    ".prettierrc.js"
   ],
   "repository": {
     "type": "git",
