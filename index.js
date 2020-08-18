@@ -6,7 +6,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/base',
     'plugin:react/recommended',
-    'plugin:prettier/recommended',
+    'prettier',
     'prettier/react',
   ],
   plugins: ['simple-import-sort', 'react-hooks'],
@@ -15,20 +15,12 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'simple-import-sort/sort': 'error',
-    'prettier/prettier': [
-      'error',
-      {
-        semi: false,
-        singleQuote: true,
-      },
-    ],
   },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       extends: [
         'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'prettier/@typescript-eslint',
       ],
       parserOptions: {
